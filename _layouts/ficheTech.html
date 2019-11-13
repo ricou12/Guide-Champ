@@ -1,0 +1,47 @@
+---
+layout: home
+---
+<article class="container font-Rozha">
+    <!-- {% assign musch = site.data.mushroom[page.number] -%} -->
+    {% assign musch = site.data.mushroom[page.number] -%}
+    <div class="row">
+        <section class="col-12">
+            <h1>{{musch.nom_commun}}</h1>
+            <h2>{{musch.nom_latin}}</h2>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-12 col-md-5">
+            <div class="row">
+                <aside class="col-12">
+                    <div class="container-img">
+                        {%- assign pathImg = "/assets/images/photo-small/" | append: musch.dossier_photo | append: "/" | append: musch.nom_img_liste  -%}
+                        <!-- vignette -->
+                        <img class="container-img__large" src="{{ pathImg  | relative_url }}" alt="">
+                    </div>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-12">
+                    <div class="vignettes">
+                         <!-- slider -->
+                    <img src="" alt="">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="col-12 col-md-7 border border-primary">
+            <aside class="comment">
+                <p>groupe : {{musch.groupe}}</p>
+            <p>chapeau :{{musch.chapeau}}</p>
+            <p>tubes_lames :{{musch.tubes_lames}}</p>
+            <p>pied :{{musch.pied}}</p>
+            <p>chair :{{musch.chair}}</p>
+            <p>remarques :{{musch.remarques}}</p>
+            <p>comestibilite :{{musch.comestibilite}}</p>
+            </aside>
+            
+        </section>
+    </div>
+</article>
+<!-- {% assign musch = site.data.mushroom | where: "ID",page.number -%} -->

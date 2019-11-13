@@ -1,0 +1,29 @@
+---
+layout: home
+---
+<article class="container">
+    <div class="row">
+        <section class="col-12 text-center text-info mt-2">
+            <h1>GUIDE SIGNALÈTIQUE</h1>
+        </section>
+        <section class="col-12 text-center d-flex flex-row flex-wrap justify-content-center ">
+            {%- if site.data.mushroom.size > 0 -%}
+            {% assign orderItem = site.data.mushroom | sort: 'nom_commun'  %}
+                {%- for fiche in orderItem -%}
+                <!-- Lien vers les fichier Md  -->
+                {%- assign lien = "/assets/html/fiches/" | append: fiche.dossier_photo |append:".html"  -%}
+               
+                <!-- Construction du chemin d'acces à l'image principale -->
+                {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
+                <div class="card  m-3 text-info shadow-sm jumbotron bg-dark" style="width: 20rem;">
+                    <a href="{{lien | relative_url}}"><img src="{{pathImg | relative_url}}" class="card-img-top"
+                            alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{fiche.nom_commun}}</h5>
+                    </div>
+                </div>
+                {%- endfor -%}
+            {% endif  %}
+        </section>
+    </div>
+</article>

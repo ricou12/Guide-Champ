@@ -1,0 +1,26 @@
+
+# ouvrir le fichier            
+#file = File.open("_data/mushroom.yml", "r") 
+
+# Stocker ds une variable 
+# fichier = file  
+
+# lit le fichier a partir du début 
+# fichier = fichier.read 
+
+# La méthode gsub! permet de remplacer
+# fichier.gsub!(" ", "")
+
+# transforme la chaîne de caractère fichier, en un tableau
+# fichier = fichier.split(";") 
+
+# Affiche un message
+# print "Le fichier 'Params.txt' n'existe pas ou est corrompu." 
+
+# ouvre en lecture/écriture
+# fichier = File.open("Params.txt", "w+") 
+
+# fichier.write("Police=Arial";Taille=24)
+
+# ferme un fichier
+# file.close 

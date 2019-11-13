@@ -1,0 +1,35 @@
+---
+layout: home
+---
+<article class="container">
+    
+    <div class="row">
+        <section class="col-12">
+            test
+            {{page.identifiant}}
+            {{site.posts.size}}
+            {%- assign variable = site.posts | where:"groupe","Bolet" -%}
+            {{variable}}
+            <h1>{{variable.nom_commun}}</h1>
+            <h2>{{variable.nom_latin}}</h2>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-12 col-md-4 border border-primary">
+            <div class="row">
+                <div class="col-12">
+                    {%- assign pathImg = "/assets/images/photo-small/" | append: page.dossier_photo | append: "/" | append: page.nom_img_liste  -%}
+                    <!-- vignette -->
+                    <img src="{{ pathImg  | relative_url }}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- slider -->
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+    </div>
+</article>
