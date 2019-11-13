@@ -1,13 +1,13 @@
 ---
 layout: home
 ---
-<article class="container font-Rozha">
+<article class="container font-Amiri ">
     <!-- {% assign musch = site.data.mushroom[page.number] -%} -->
     {% assign musch = site.data.mushroom[page.number] -%}
     <div class="row">
-        <section class="col-12">
-            <h1>{{musch.nom_commun}}</h1>
-            <h2>{{musch.nom_latin}}</h2>
+        <section class="col-12 my-4">
+            <h1 class=" text-center mt-1">{{ musch.nom_commun | capitalize }}</h1>
+            <!-- <h2 class="text-left">{{ musch.nom_latin | capitalize }}</h2> -->
         </section>
     </div>
     <div class="row">
@@ -23,23 +23,38 @@ layout: home
             </div>
             <div class="row">
                 <aside class="col-12">
-                    <div class="vignettes">
+                    <div class="">
                          <!-- slider -->
                     <img src="" alt="">
                     </div>
                 </aside>
             </div>
         </section>
-        <section class="col-12 col-md-7 border border-primary">
+        <section class="col-12 col-md-7">
+            <h4 class="text-left">{{ musch.nom_latin | capitalize }}</h4>
             <aside class="comment">
-                <p>groupe : {{musch.groupe}}</p>
-            <p>chapeau :{{musch.chapeau}}</p>
-            <p>tubes_lames :{{musch.tubes_lames}}</p>
-            <p>pied :{{musch.pied}}</p>
-            <p>chair :{{musch.chair}}</p>
-            <p>remarques :{{musch.remarques}}</p>
-            <p>comestibilite :{{musch.comestibilite}}</p>
-            </aside>
+                {%- if musch.groupe  -%}
+                <p>groupe : {{ musch.groupe }}</p>
+                {%- endif  -%}
+                {%- if musch.chapeau -%}
+                <p>chapeau : {{ musch.chapeau }}</p>
+                {%- endif  -%}
+                {%- if musch.tubes_lames  -%}
+                <p>tubes_lames : {{ musch.tubes_lames }}</p>
+                {%- endif  -%}
+                {%- if musch.pied -%}
+                <p>pied : {{ musch.pied }}</p>
+                {%- endif  -%}
+                {%- if musch.chair -%}
+                <p>chair : {{ musch.chair }}</p>
+                {%- endif  -%}
+                {%- if musch.remarques -%}
+                <p>remarques : {{ musch.remarques }}</p>
+                {%- endif  -%}
+                {%- if musch.comestibilite -%}
+                <p>comestibilite : {{ musch.comestibilite }}</p>
+                {%- endif  -%}
+           </aside>
             
         </section>
     </div>
