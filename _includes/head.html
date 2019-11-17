@@ -1,17 +1,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <!-- Title onglets du navigateur -->
+    <title>{{ page.title }}</title>
+
+    <!-- auto size img accueil -->
+    {%- if page.name  -%}
+    <!-- <link rel="stylesheet" href="{{"/assets/css/autoresizeImg.css" | relative_url}}" type="text/css" media="screen"> -->
+    {%- endif -%}
+    
+
+    <!-- OpenGraph -->
+
     <!-- Icone du site -->
     <link rel="icon" href="{{"/favicon.ico" |relative_url}}" />
+
     <!-- liens vers le CDN de Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arapey&display=swap" rel="stylesheet">
+
     <!-- Lien vers mes fichiers css -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type="text/css">
+    <link rel="stylesheet" href="{{"/assets/css/main.css" | relative_url }}" type="text/css">
+
     <!-- liens vers le CDN de bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>{{ page.title }}</title>
+    
   </head>
   

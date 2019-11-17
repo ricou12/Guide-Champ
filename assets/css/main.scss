@@ -1,8 +1,15 @@
 --- 
-# this ensures Jekyll reads the file to be transformed into CSS later # only Main files contain this front matter,
+# this ensures Jekyll reads the file to be transformed into CSS later 
+# only Main files contain this front matter,
 # not partials.
 ---
  
  
 //importations scss, et intégré à notre css final.
-@import "./main";
+
+@import "font";
+@import "logo";
+@import "ficheTech";
+@import "guide";
+@import "home";
+@import "./components/main-components"

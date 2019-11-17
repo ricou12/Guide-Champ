@@ -1,0 +1,14 @@
+.accueil {
+    &__title {
+        margin: 0px;
+
+        &--Tangerine {
+            font-family: 'Tangerine', cursive;
+            font-size: 4em;
+        }
+    }
+
+    &__img {
+       width: 100vw;
+    }
+}

@@ -4,7 +4,6 @@
   "description": "Guide",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass assets/css/main.scss _site/assets/css/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

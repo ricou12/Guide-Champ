@@ -1,0 +1,31 @@
+// USE MIXIN WITH @INCLUDE
+.bg {
+  &-color {
+
+    &--blue {
+      @include color-grad-blue;
+      @include shadow-leftToRight;
+      color: rgba(0, 18, 254, 0.4);
+    }
+
+    &--gray {
+      @include color-grad-gray;
+      @include shadow-leftToRight;
+      padding: 10px;
+      color:rgb(43, 37, 244);
+    }
+
+    &--red {
+      @include color-grad-red;
+      @include shadow-leftToRight;
+      color:rgb(134, 11, 2);
+    }
+
+    &--green {
+      @include color-grad-green;
+      @include shadow-leftToRight;
+      color: rgb(100, 119, 95);
+    }
+    
+  }
+}

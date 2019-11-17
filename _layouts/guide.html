@@ -1,10 +1,10 @@
 ---
-layout: home
+layout: default
 ---
-<article class="container Amiri">
+<article class="container-fluid">
     <div class="row">
-        <section class="col-12 text-center text-info mt-2">
-            <h1>GUIDE SIGNALÈTIQUE</h1>
+        <section class="col-12 mt-1">
+            <h1 class="accueil__title--Tangerine text-center bg-color--gray">Guide signalétique</h1>
         </section>
         <section class="col-12 text-center d-flex flex-row flex-wrap justify-content-center ">
             {%- if site.data.mushroom.size > 0 -%}
@@ -15,13 +15,15 @@ layout: home
                
                 <!-- Construction du chemin d'acces à l'image principale -->
                 {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
-                <div class="card  m-3 text-info shadow-sm jumbotron bg-dark" style="width: 20rem;">
-                    <a href="{{lien | relative_url}}"><img src="{{pathImg | relative_url}}" class="card-img-top"
+                <div class="card m-3 text-info shadow-sm bg-dark " style="width: 20rem; position: relative;">
+                    <div class="comestible"></div>
+                    <a href="{{lien | relative_url}}"><img src="{{pathImg | relative_url}}" class="card-img-top "
                             alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">{{fiche.nom_commun}}</h5>
+                        <h5 class="card-title ">{{fiche.nom_commun}}</h5>
                     </div>
                 </div>
+                
                 {%- endfor -%}
             {% endif  %}
         </section>
