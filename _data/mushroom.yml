@@ -13,7 +13,7 @@
   chair: "saveur et odeur douces."
   habitat: "thermophile, il pousse de la fin de l'été au début de l'hiver, généralement dans les chênaies aérées"
   remarques: "excellent comestible."
-  comestibilite: "Execellent comesible"
+  comestibilite: "execellent"
 -
   nom_latin: "BOLETUS EDULIS"
   nom_commun: "Cépe de bordeaux"
@@ -25,7 +25,7 @@
   pied: "robuste et ferme, renflé à ventru ou allongé en massue vers la base, de couleur fauve strié d'un fin réseau blanc en saillie, devenant blanc vers la base"
   chair: "blanche."
   remarques: "excellent comestible."
-  comestibilite: "Execellent comesible"
+  comestibilite: "excellent"
 -
   nom_latin: "AMANITA MUSCARIA"
   nom_commun: "Amanite tue mouches"
@@ -37,7 +37,7 @@
   pied: "est blanc, il mesure 5 à 20 centimètres de haut pour 1 à 2 centimètres de diamètre, et a la texture fibreuse et légèrement friable typique de la plupart des grands champignons. À sa base, la volve (ou bulbe) porte des résidus du voile universel sous la forme d'un ou deux anneaux concentriques."
   chair: "blanche."
   remarques: "toxique, hallucinogène."
-  comestibilite: "Toxique, hallucinogène"
+  comestibilite: "toxique"
 -
   nom_latin: "AMANITA CAESAREA"
   nom_commun: "Amanite des césars"
@@ -50,7 +50,7 @@
   pied: "de 8 à 15 cm est robuste, droit ou légèrement courbé, de la couleur des lames. La base du stipe est ovoïde vers le sol. La volve est épaisse, blanc grisâtre, s’écartant du stipe et ample. Son anneau membraneux, concolore au pied, placé haut et pendant. L’odeur est agréable, sa saveur douce de noix. La sporée est blanche."
   chair: "ferme, blanche, jaune sous la cuticule. La marge est nettement striée, jaune d'or."
   remarques: "sa réputation d'excellent comestible, sa beauté et sa relative rareté en font un champignon recherché."
-  comestibilite: "Execellent comesible"
+  comestibilite: "excellent"
 -
   nom_latin: "SUILLUS COLLINITUS"
   nom_commun: "Bolet enduit"
@@ -64,7 +64,7 @@
   chair: "jaunâtre, molle."
   habitat: "sous les pins et plus particulierement pins d'alep, milieu herbeux."
   remarques: "considèré comme comestible. il reste cependant laxatif."
-  comestibilite: "Considèré comme comestible. il reste cependant laxatif."
+  comestibilite: "rejeter"
 -
   nom_latin: "SUILLUS LUTEUS"
   nom_commun: "Bolet jaune"
@@ -77,7 +77,7 @@
   pied: "court et massif, blanchâtre à jaunâtre, plutôt granuleux vers le sommet"
   chair: "blanchâtre à jaunâtre."
   remarques: "bon comestible à l'état juvénile."
-  comestibilite: "Bon comestible à l'état juvénile."
+  comestibilite: "bon"
 -
   nom_latin: "SUILLUS VARIEGATUS"
   nom_commun: "Bolet moucheté"
@@ -89,7 +89,7 @@
   pied: "brun, Crème, Gris, Jaune."
   chair: "blanc, Crème, Jaune."
   remarques: "comestible."
-  comestibilite: "Comestible"
+  comestibilite: "mediocre"
 -
   nom_latin: "LACTARIUS SANGUIFLUUS"
   nom_commun: "Lactaire sanguin"
@@ -103,7 +103,7 @@
   chair: "blanchatre a la coupe puis sécretion d'un latex rouge vineux"
   habitat: "sous les pins maritimes, d’Alep..., en mélange avec chênes, arbousiers, bruyères,romarin."
   remarques: "excellent comestible."
-  comestibilite: "Excellent comestible"
+  comestibilite: "excellent"
 -
   nom_latin: "LACTARIUS DELICIOSUS"
   nom_commun: "Lactaire délicieux"
@@ -117,7 +117,7 @@
   chair: "blanchâtre se colorant d'un lait couleur carotte."
   habitat: "en automne sous pins maritimes,sylvestre, en forêts mixtes pins, chênes, bruyère."
   remarques: "Bon comestible"
-  comestibilite: "Bon comestible"
+  comestibilite: "bon"
 -
   nom_latin: "LECCINUM LEPIDUM"
   nom_commun: "Bolet joli"
@@ -125,7 +125,7 @@
   groupe: "Bolet"
   dossier_photo: "bolet_joli"
   nom_img_liste: "img0.jpg"
-  comestibilite: "Comestible"
+  comestibilite: "mediocre"
 -
   nom_latin: "LACTARIUS TESQUORUM"
   nom_commun: "Lactaire des lieux sauvages"
@@ -138,7 +138,8 @@
   pied: "Blanc, Crème, Saumon"
   chair: "latex blanc saveur âcre"
   habitat: "sous les pins"
-  remarques: "Sans intérêt"
+  remarques: "rejeter"
+  comestibilite: "rejeter"
 -
   nom_latin: "RUSSULA VIRESCENS"
   nom_commun: "Russule verdoyante"
@@ -152,7 +153,7 @@
   chair: "blanche avec une odeur fongique faible et une saveur de noisette"
   habitat: "Sous feuillus(chêne, hêtre, châtaignier),sous conifères."
   remarques: "excellent comestible, sans doute la meilleure des russules"
-  comestibilite: "Excellent comestible"
+  comestibilite: "excellent"
 -
   nom_latin: "MACROLEPIOTA PROCERA"
   nom_commun: "Lepiote élevée"
@@ -166,7 +167,7 @@
   chair: "est blanche, molle, avec une odeur et une saveur fruitées agréables."
   habitat: "sur sol à tendance acide de type schisteux. sous-bois dégagés ou les clairières."
   remarques: "Comestible recherché."
-  comestibilite: "Comestible recherché"
+  comestibilite: "bon"
 -
   nom_latin: "BOLETUS AESTIVALIS"
   nom_commun: "Cèpe d'été"
@@ -180,7 +181,7 @@
   chair: "blanche, épaisse, ferme."
   habitat: "bois de feuillus, lisières, souvent sous hêtres & chênes, clairières."
   remarques: "de Mai à Septembre\r\nLe cèpes d’été est un des meilleurs cèpes, incontestablement ! C’est le plus précoce, mais on le trouve rarement après le mois de septembre."
-  comestibilite: "Excellent comestible"
+  comestibilite: "excellent"
 -
   nom_latin: "CANTHARELLUS CIBARIUS"
   nom_commun: "Chanterelle comestible"
@@ -194,7 +195,7 @@
   chair: "blanc crème.Odeur fruitée, saveur douce à un peu piquante."
   habitat: "Sous feuillus et sous conifère, du printemps a l'automne."
   remarques: "Bon comestible"
-  comestibilite: "Excellent comestible"
+  comestibilite: "Excellent"
 -
   nom_latin: "CANTHARELLUS LUTESCENS"
   nom_commun: "Chanterelle jaunissante"
@@ -208,7 +209,7 @@
   chair: "fibreuse. odeur fruitée saveur douce."
   habitat: "en colonie sous feuillus,conifère souvent sous bruyère. Sur sol a tendance acide de type schites."
   remarques: "bon comestible."
-  comestibilite: "Excellent comestible"
+  comestibilite: "excellent"
 -
   nom_latin: "RAMARIA FLAVA"
   nom_commun: "Clavaire jaune"
@@ -222,7 +223,7 @@
   chair: "blanchâtre. Odeur légère, agréable"
   habitat: "sous les chênes."
   remarques: " comestible médiocre"
-  comestibilite: "Comestible médiocre"
+  comestibilite: "mediocre"
 -
   nom_latin: "COPRINUS COMATUS"
   nom_commun: "Coprin chevelu"
@@ -235,7 +236,7 @@
   pied: "est long et blanc, renflé à la base. Entièrement lisse et blanche au début, la cuticule devient méchuleuse jaunâtre ou ocrée (d'où son qualificatif de « chevelu »)"
   habitat: "dans les prairies, les endroits dégagés des bois, les clairières, les bords de chemin et même les jardins, sur sols riches en azote."
   remarques: "considéré comme un excellent comestible, à condition toutefois de le consommer jeune, c'est-à-dire entièrement blanc à la coupe, s'il y a du noir il est à rejeter."
-  comestibilite: "Bon comestible"
+  comestibilite: "bon"
 -
   nom_latin: "SARCOSPHAERA CORONARIA"
   nom_commun: "Pezize étoilée"
@@ -247,7 +248,7 @@
   chair: "blanchâtre à violacée, cassante. Odeur et saveurs faible."
   habitat: "Sous conifères, chênes sur sol calcaire."
   remarques: "toxique(mortel cru)"
-  comestibilite: "Toxique, mortel consommé cru"
+  comestibilite: "toxique"
 -
   nom_latin: "Gomphus clavatus"
   nom_commun: "Chanterelle violette"
@@ -260,7 +261,7 @@
   chair: "blanche et ferme."
   habitat: "conifères ( pins, sapins ) surtout en montagne.Souvent en touffes.Fin de l' été et automne.Peu courant à assez courant selon les régions."
   remarques: "bon comestible jeune, légèrement amer par la suite.Ce champignon est apprécié pour sa chair plus tendre que la girolle mais il est aussi moins parfumé que cette dernière."
-  comestibilite: "Bon comestible"
+  comestibilite: "bon"
 -
   nom_latin: "Hydnum repandum"
   nom_commun: "Hydne commun"
@@ -273,7 +274,7 @@
   pied: "épais, charnu, trapu, plein, de 3 à 8 x 1 à 4 cm, difforme, excentré rarement central, s'épaississant à la base, blanchâtre puis roussissant par endroits "
   chair: "épaisse, ferme, cassante, blanche fonçant légèrement au contact de l'air, très légère odeur agréable, saveur parfois légèrement amère"
   remarques: "c'est un excellent comestible, mais non de premier choix, sa chair présentant souvent l'inconvénient d'une légère amertume."
-  comestibilite: "Excellent comestible à l'état jeune"
+  comestibilite: "excellent"
 -
   nom_latin: "Geastrum fimbriatum"
   nom_commun: "Géastre sessile"
@@ -283,7 +284,7 @@
   chapeau: "Sphérique de 2 à 4 cm de diamètre avant ouverture.\r\nIl éclate en 6 à 10 segments ocre avec une boule au centre allant de l' ocre au gris parfois brun surmontée d' une pointe plus sombre"
   chair: "molle blanche à grise."
   remarques: "non comestible"
-  comestibilite: "Non comestible"
+  comestibilite: "rejeter"
 -
   nom_latin: "Morchella elata"
   nom_commun: "Morille conique"
@@ -294,7 +295,7 @@
   tubes_lames: " alvéoles irrégulières"
   pied: "jusqu’à 12 cm, trapu, crème, creux, granuleux"
   chair: "Crème, peu épaisse"
-  comestibilite: "Excellent comestible"
+  comestibilite: "excellent"
 -
   nom_latin: "Phallus impudicus"
   nom_commun: "Satyre puant"
@@ -306,7 +307,7 @@
   pied: "10 à 20 cm sur 2 à 4 cm de diamètre, allongé et s'amincissant graduellement vers le haut, blanc, alvéolé, creux, caverneux et fragile - il s'affaisse fréquemment au bout de quelques jours. Il est chaussé d'une volve, reste de l'œuf éclaté."
   chair: "blanche et poreuse, inodore en elle-même. En revanche la gléba, tant qu'elle est présente, répand une odeur pestilentielle de cadavre que l'on sent à plusieurs mètres à la ronde avant même d'avoir aperçu le champignon."
   remarques: "L'œuf, débarrassé de sa gélatine, est comestible cru, par exemple en salade, et un goût se situant entre le radis et le raifort. Il est surtout consommé en Extrême-Orient. Une fois le champignon développé, son odeur de charogne proscrit toute utilisation culinaire. "
-  comestibilite: "L'œuf, débarrassé de sa gélatine, est comestible cru"
+  comestibilite: "rejeter"
 -
   nom_latin: "clitocybe odora"
   nom_commun: "Clitocybe anisé"
@@ -318,7 +319,7 @@
   pied: "8 x 1,5 cm, cylindrique, blanchâtre plus ou moins bleuté verdâtre, pruineux, floconneux-fibrilleux, base velue légèrement épaissie."
   chair: "blanc sale à bleutée, élastique, peu épaisse sauf au disque, odeur forte d'anis, saveur douce fortement anisée"
   remarques: "bon comestible, mais très (trop) parfumé, à utiliser de préférence en condiment"
-  comestibilite: "Bon comestible"
+  comestibilite: "bon"
 -
   nom_latin: "Fomes fomentarius"
   nom_commun: "Amadouvier"
@@ -331,6 +332,7 @@
   chair: "La chair est épaisse, brune, d'aspect ligneux, coriace."
   habitat: "C'est un redoutable parasite de plusieurs feuillus : hêtre, platane, bouleau, peuplier, chêne ou marronnier, entre autres. Il se fixe sur des arbres faibles ou blessés, produit une pourriture blanche et finit en quelques années par tuer son hôte. "
   remarques: "l'amadouvier n'est pas comestible. Il était utilisé comme substance inflammable dès la Préhistoire."
+  comestibilite: "rejeter"
 -
   nom_latin: "Rhizopogon"
   nom_commun: "Rhizopogon rose"
@@ -340,6 +342,7 @@
   chapeau: "en forme de pomme de terre, blanchâtre à jaune."
   tubes_lames: "gléba spongieux, jaunâtre puis olive foncé à maturation. Sporée olivâtre."
   remarques: "A rejeter. Il existe des nombreuse espèces de rhizopogon, très difficile à différencier les unes des autres."
+  comestibilite: "rejeter"
 -
   nom_latin: "Lycoperdon perlatum"
   nom_commun: "Vesse-de-loup perlée"
@@ -352,4 +355,5 @@
   chair: "blanc bistre."
   habitat: "principalement dans les bois de conifères, en lisières, talus et chemins les bordant, parfois aussi dans les herbus contigus moins fréquemment sous les feuillus"
   remarques: " considérées comme comestibles quand elles sont jeunes et que la gleba est homogène et blanche."
+  comestibilite: "mediocre"
 ...
