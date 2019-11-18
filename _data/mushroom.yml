@@ -13,7 +13,7 @@
   chair: "saveur et odeur douces."
   habitat: "thermophile, il pousse de la fin de l'été au début de l'hiver, généralement dans les chênaies aérées"
   remarques: "excellent comestible."
-  comestibilite: "execellent"
+  comestibilite: "excellent"
 -
   nom_latin: "BOLETUS EDULIS"
   nom_commun: "Cépe de bordeaux"
@@ -195,7 +195,7 @@
   chair: "blanc crème.Odeur fruitée, saveur douce à un peu piquante."
   habitat: "Sous feuillus et sous conifère, du printemps a l'automne."
   remarques: "Bon comestible"
-  comestibilite: "Excellent"
+  comestibilite: "excellent"
 -
   nom_latin: "CANTHARELLUS LUTESCENS"
   nom_commun: "Chanterelle jaunissante"

@@ -1,18 +1,46 @@
 <footer class="container-fluid bg-dark text-light mt-1">
     <section class="row">
-        <aside class="col-6">
-            <p>Le copyright
-                Si votre footer ne doit comporter qu'un élément, c'est bien le copyright. Veillez à y intégrer le
-                symbole copyright complété de l'année, une mesure indispensable pour vous prémunir de tout plagiat de
-                votre site. </p>
-            <p> Le Sitemap
-                C'est le lien le plus répandu dans les pieds de page et qui renvoie vers la version html du Sitemap</p>
+        <aside class="col-12 col-md-5 ">
+            <p>© Copyright 2019 E. LANZA</p>
+            <p>Retour en <a href="{{"index.html"|relative_url}}">page d'acceuil</a></p>
+
         </aside>
-        <aside class="col-6">
-            <ul>
-                <li>Contact</li>
-                <li>Les icônes des réseaux sociaux</li>
+        <aside class="col-12 col-md-5">
+            <ul class="footer__list">
+                <li>Ricou</li>
+                <li>23 rue villeneuve</li>
+                <li>13001 Marseille</li>
+                <li>dwwm2019@gmail.com</li>
             </ul>
+        </aside>
+        <aside class="col-12 col-md-2 d-flex justify-content-around align-items-center">
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><img class="footer__reseaux"
+                    src="{{"./assets/images/others/facebook.png"|relative_url}}" alt="facebook"></a>
+            <a href="#"> <img class="footer__reseaux" src="{{"./assets/images/others/linkedin.png"|relative_url}}"
+                    alt="linkedin"></a>
+            <a href="#"><img class="footer__reseaux" src="{{"./assets/images/others/twitter.jpg"|relative_url}}"
+                    alt="twitter"></a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-danger" id="exampleModalCenterTitle">Facebook</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="footer__bouc" src="{{"./assets/images/others/bouc.jpg"|relative_url}}" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
     </section>
 </footer>

@@ -1,29 +1,29 @@
 
 
-.fichTech__titre{
-color: #444444;
-background: #FFFFFF;
-text-shadow: 1px 0px 1px #CCCCCC,
-0px 1px 1px #EEEEEE,
-2px 1px 1px #CCCCCC,
-1px 2px 1px #EEEEEE,
-3px 2px 1px #CCCCCC,
-2px 3px 1px #EEEEEE,
-4px 3px 1px #CCCCCC,
-3px 4px 1px #EEEEEE,
-5px 4px 1px #CCCCCC,
-4px 5px 1px #EEEEEE,
-6px 5px 1px #CCCCCC,
-5px 6px 1px #EEEEEE,
-7px 6px 1px #CCCCCC;
-color: #444444;
-background: #FFFFFF;
-}
-.bg{
-    color: rgba(0, 0, 0, .6);
-    background: #6e6e6e;
-    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
-}
+// .fichTech__titre{
+// color: #444444;
+// background: #FFFFFF;
+// text-shadow: 1px 0px 1px #CCCCCC,
+// 0px 1px 1px #EEEEEE,
+// 2px 1px 1px #CCCCCC,
+// 1px 2px 1px #EEEEEE,
+// 3px 2px 1px #CCCCCC,
+// 2px 3px 1px #EEEEEE,
+// 4px 3px 1px #CCCCCC,
+// 3px 4px 1px #EEEEEE,
+// 5px 4px 1px #CCCCCC,
+// 4px 5px 1px #EEEEEE,
+// 6px 5px 1px #CCCCCC,
+// 5px 6px 1px #EEEEEE,
+// 7px 6px 1px #CCCCCC;
+// color: #444444;
+// background: #FFFFFF;
+// }
+// .bg{
+//     color: rgba(0, 0, 0, .6);
+//     background: #6e6e6e;
+//     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+// }
 .container-img {
     border: 1px solid rgba(147, 159, 223, 0.8);
     overflow: hidden;
@@ -35,10 +35,10 @@ background: #FFFFFF;
     &__large {
         max-height: 100%;
         max-width: 100%;
-        transition: 1s;
+        transition: 0.5s;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
     }
 }

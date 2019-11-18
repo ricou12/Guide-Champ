@@ -16,34 +16,41 @@ layout: default
 
             <!-- Construction du chemin d'acces à l'image principale -->
             {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
-            <div class="card m-3 text-info shadow-sm bg-dark">
-                <a href="{{lien | relative_url}}">
+
+            <a href="{{lien | relative_url}}">
+                <div class="card m-3 text-info shadow-sm bg-dark">
+
+                    <div class="card__eat">
+                        {%- assign consommable = "" -%}
+                        {% if fiche.comestibilite == "mortel" %}
+                        {%- assign consommable = "mortel.png" -%}
+                        {% elsif fiche.comestibilite == "toxique" %}
+                        {%- assign consommable = "toxique.png" -%}
+                        {% elsif fiche.comestibilite == "rejeter" %}
+                        {%- assign consommable = "a-rejeter.png" -%}
+                        {% elsif fiche.comestibilite == "mediocre" %}
+                        {%- assign consommable = "comestible-mediocre.png" -%}
+                        {% elsif fiche.comestibilite == "bon" %}
+                        {%- assign consommable = "bon-comestible.png" -%}
+                        {% elsif fiche.comestibilite == "excellent" %}
+                        {%- assign consommable = "excellent-comestible.png" -%}
+                        {% endif %}
+                        {%- assign icone = "/assets/images/others/" | append: consommable -%}
+
+                        <img class="card__eat__img" src="{{icone | relative_url}}" alt="Comestibilité">
+                    </div>
+
+
                     <div class="card__zoomer">
-                        <div class="card__eat">
-                            {%- assign consommable = "" -%}
-                            {% if fiche.comestibilite == "mortel" %}
-                            {%- assign consommable = "mortel.png" -%}
-                            {% elsif fiche.comestibilite == "toxique" %}
-                            {%- assign consommable = "toxique.png" -%}
-                            {% elsif fiche.comestibilite == "rejeter" %}
-                            {%- assign consommable = "a-rejeter.png" -%}
-                            {% elsif fiche.comestibilite == "mediocre" %}
-                            {%- assign consommable = "comestible-mediocre.png" -%}
-                            {% elsif fiche.comestibilite == "bon" %}
-                            {%- assign consommable = "bon-comestible.png" -%}
-                            {% elsif fiche.comestibilite == "excellent" %}
-                            {%- assign consommable = "excellent-comestible.png" -%}
-                            {% endif %}
-                            {%- assign icone = "/assets/images/others/" | append: consommable -%}
-                            <img class="card__eat__img" src="{{icone | relative_url}}" alt="Comestibilité">
-                        </div>
                         <img src="{{pathImg | relative_url}}" class="card__image" alt="...">
                     </div>
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title ">{{fiche.nom_commun}}</h5>
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{fiche.nom_commun}}</h5>
+                    </div>
                 </div>
-            </div>
+            </a>
             {%- endfor -%}
             {% endif  %}
         </section>

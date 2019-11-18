@@ -2,6 +2,11 @@
     width: 20rem;
     position: relative;
     overflow: hidden;
+    z-index: 10;
+
+    &:hover {
+        transition: 1s;
+    }
 
     &__zoomer {
         transition: 0.5s;
@@ -11,28 +16,35 @@
         }
     }
 
+    // block au dimension du container parent
     &__eat {
+        z-index: 1;
         position: absolute;
         top: 0px;
         left: 0px;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &:hover>.card__eat__img {
-            display: block;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+
+            &>.card__eat__img {
+                position: absolute;
+                height: 10%;
+                filter: invert(10);
+                display: block;
+            }
         }
 
         &__img {
             display: none;
         }
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-
-        }
     }
 
+    // largeur d'image au dimension du container parent
     &__image {
         width: 100%;
     }
