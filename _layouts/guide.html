@@ -35,9 +35,9 @@ layout: default
                         {% elsif fiche.comestibilite == "excellent" %}
                         {%- assign consommable = "excellent-comestible.png" -%}
                         {% endif %}
-                        {%- assign icone = "/assets/images/others/" | append: consommable -%}
-
-                        <img class="card__eat__img" src="{{icone | relative_url}}" alt="Comestibilité">
+                       
+                        <img class="card__eat__img"
+                            src="{{"./assets/images/others/" | append: consommable | relative_url}}" alt="Comestibilité">
                     </div>
 
 
