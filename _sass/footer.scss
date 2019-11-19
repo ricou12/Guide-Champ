@@ -1,4 +1,5 @@
 .footer {
+    @include border-shadow-t;
     &__bouc {
         width: 100%;
     }
