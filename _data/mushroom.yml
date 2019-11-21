@@ -2,6 +2,7 @@
 ---
 # mycologie.champignons
 -
+  number: "2"
   nom_latin: "BOLETUS AEREUS"
   nom_commun: "Cèpe bronzé"
   groupe: "Bolet"
@@ -15,6 +16,7 @@
   remarques: "excellent comestible."
   comestibilite: "excellent"
 -
+  number: "6"
   nom_latin: "BOLETUS EDULIS"
   nom_commun: "Cépe de bordeaux"
   groupe: "Bolet"
@@ -27,6 +29,7 @@
   remarques: "excellent comestible."
   comestibilite: "excellent"
 -
+  number: "6"
   nom_latin: "AMANITA MUSCARIA"
   nom_commun: "Amanite tue mouches"
   groupe: "Amanite"
@@ -39,6 +42,7 @@
   remarques: "toxique, hallucinogène."
   comestibilite: "toxique"
 -
+  number: "0"
   nom_latin: "AMANITA CAESAREA"
   nom_commun: "Amanite des césars"
   nom_local: "Oronge"
@@ -52,6 +56,7 @@
   remarques: "sa réputation d'excellent comestible, sa beauté et sa relative rareté en font un champignon recherché."
   comestibilite: "excellent"
 -
+  number: "2"
   nom_latin: "SUILLUS COLLINITUS"
   nom_commun: "Bolet enduit"
   nom_local: "Pissacan"
@@ -66,6 +71,7 @@
   remarques: "considèré comme comestible. il reste cependant laxatif."
   comestibilite: "rejeter"
 -
+  number: "3"
   nom_latin: "SUILLUS LUTEUS"
   nom_commun: "Bolet jaune"
   nom_local: " Nonnette voilée"
@@ -79,6 +85,7 @@
   remarques: "bon comestible à l'état juvénile."
   comestibilite: "bon"
 -
+  number: "1"
   nom_latin: "SUILLUS VARIEGATUS"
   nom_commun: "Bolet moucheté"
   groupe: "Bolet"
@@ -91,6 +98,7 @@
   remarques: "comestible."
   comestibilite: "mediocre"
 -
+  number: "12"
   nom_latin: "LACTARIUS SANGUIFLUUS"
   nom_commun: "Lactaire sanguin"
   nom_local: "Sanguin\r\nrouge"
@@ -105,6 +113,7 @@
   remarques: "excellent comestible."
   comestibilite: "excellent"
 -
+  number: "3"
   nom_latin: "LACTARIUS DELICIOSUS"
   nom_commun: "Lactaire délicieux"
   nom_local: "Safrané"
@@ -119,6 +128,7 @@
   remarques: "Bon comestible"
   comestibilite: "bon"
 -
+  number: "3"
   nom_latin: "LECCINUM LEPIDUM"
   nom_commun: "Bolet joli"
   nom_local: "Bolet du chène vert"
@@ -127,6 +137,7 @@
   nom_img_liste: "img0.jpg"
   comestibilite: "mediocre"
 -
+  number: "3"
   nom_latin: "LACTARIUS TESQUORUM"
   nom_commun: "Lactaire des lieux sauvages"
   nom_local: ""
@@ -141,6 +152,7 @@
   remarques: "rejeter"
   comestibilite: "rejeter"
 -
+  number: "5"
   nom_latin: "RUSSULA VIRESCENS"
   nom_commun: "Russule verdoyante"
   nom_local: "Palomet"
@@ -155,6 +167,7 @@
   remarques: "excellent comestible, sans doute la meilleure des russules"
   comestibilite: "excellent"
 -
+  number: "4"
   nom_latin: "MACROLEPIOTA PROCERA"
   nom_commun: "Lepiote élevée"
   nom_local: "Coulemelle"
@@ -169,6 +182,7 @@
   remarques: "Comestible recherché."
   comestibilite: "bon"
 -
+  number: "3"
   nom_latin: "BOLETUS AESTIVALIS"
   nom_commun: "Cèpe d'été"
   nom_local: "Cèpe réticulé"
@@ -183,6 +197,7 @@
   remarques: "de Mai à Septembre\r\nLe cèpes d’été est un des meilleurs cèpes, incontestablement ! C’est le plus précoce, mais on le trouve rarement après le mois de septembre."
   comestibilite: "excellent"
 -
+  number: "13"
   nom_latin: "CANTHARELLUS CIBARIUS"
   nom_commun: "Chanterelle comestible"
   nom_local: "Girolle"
@@ -197,6 +212,7 @@
   remarques: "bon comestible"
   comestibilite: "excellent"
 -
+  number: "5"
   nom_latin: "CANTHARELLUS LUTESCENS"
   nom_commun: "Chanterelle jaunissante"
   nom_local: ""
@@ -211,6 +227,7 @@
   remarques: "bon comestible."
   comestibilite: "excellent"
 -
+  number: "4"
   nom_latin: "RAMARIA FLAVA"
   nom_commun: "Clavaire jaune"
   nom_local: "Barbe"
@@ -225,6 +242,7 @@
   remarques: "comestible médiocre"
   comestibilite: "mediocre"
 -
+  number: "6"
   nom_latin: "COPRINUS COMATUS"
   nom_commun: "Coprin chevelu"
   nom_local: "Goutte d'encre"
@@ -238,6 +256,7 @@
   remarques: "considéré comme un excellent comestible, à condition toutefois de le consommer jeune, c'est-à-dire entièrement blanc à la coupe, s'il y a du noir il est à rejeter."
   comestibilite: "bon"
 -
+  number: 0"
   nom_latin: "SARCOSPHAERA CORONARIA"
   nom_commun: "Pezize étoilée"
   nom_local: "Golbelet"
@@ -250,6 +269,7 @@
   remarques: "toxique (mortel cru)"
   comestibilite: "toxique"
 -
+  number: "2"
   nom_latin: "Gomphus clavatus"
   nom_commun: "Chanterelle violette"
   groupe: "Chanterelle"
@@ -263,6 +283,7 @@
   remarques: "bon comestible jeune, légèrement amer par la suite.Ce champignon est apprécié pour sa chair plus tendre que la girolle mais il est aussi moins parfumé que cette dernière."
   comestibilite: "bon"
 -
+  number: "5"
   nom_latin: "Hydnum repandum"
   nom_commun: "Hydne commun"
   nom_local: "Pied-de-mouton. Barbe de chèvre. Hydne sinué. Hydne commun. Langue-de-veau."
@@ -276,6 +297,7 @@
   remarques: "excellent comestible, mais non de premier choix, sa chair présentant souvent l'inconvénient d'une légère amertume."
   comestibilite: "excellent"
 -
+  number: "3"
   nom_latin: "Geastrum fimbriatum"
   nom_commun: "Géastre sessile"
   groupe: "Geastre"
@@ -286,6 +308,7 @@
   remarques: "non comestible"
   comestibilite: "rejeter"
 -
+  number: "5"
   nom_latin: "Morchella elata"
   nom_commun: "Morille conique"
   groupe: "Morille"
@@ -297,6 +320,7 @@
   chair: "crème, peu épaisse"
   comestibilite: "excellent"
 -
+  number: "1"
   nom_latin: "Phallus impudicus"
   nom_commun: "Satyre puant"
   nom_local: "œuf du Diable"
@@ -309,6 +333,7 @@
   remarques: "l'oeuf, débarrassé de sa gélatine, est comestible cru, par exemple en salade, et un goût se situant entre le radis et le raifort. Il est surtout consommé en Extrême-Orient. Une fois le champignon développé, son odeur de charogne proscrit toute utilisation culinaire. "
   comestibilite: "rejeter"
 -
+  number: "1"
   nom_latin: "clitocybe odora"
   nom_commun: "Clitocybe anisé"
   groupe: "Clitocybe"
@@ -321,6 +346,7 @@
   remarques: "bon comestible, mais très (trop) parfumé, à utiliser de préférence en condiment"
   comestibilite: "bon"
 -
+  number: "1"
   nom_latin: "Fomes fomentarius"
   nom_commun: "Amadouvier"
   groupe: "Polypores"
@@ -334,6 +360,7 @@
   remarques: "l'amadouvier n'est pas comestible. Il était utilisé comme substance inflammable dès la Préhistoire."
   comestibilite: "rejeter"
 -
+  number: "0"
   nom_latin: "Rhizopogon"
   nom_commun: "Rhizopogon rose"
   groupe: "Gastéromycètes"
@@ -344,6 +371,7 @@
   remarques: "A rejeter. Il existe des nombreuse espèces de rhizopogon, très difficile à différencier les unes des autres."
   comestibilite: "rejeter"
 -
+  number: "3"
   nom_latin: "Lycoperdon perlatum"
   nom_commun: "Vesse-de-loup perlée"
   groupe: "Gastéromycètes"

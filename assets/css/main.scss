@@ -6,7 +6,7 @@
  
  
 //importations scss, et intégré à notre css final.
-
+@import "./components/main-components";
 @import "utilities";
 @import "navbar";
 @import "font";
@@ -15,4 +15,4 @@
 @import "guide";
 @import "home";
 @import "footer";
-@import "./components/main-components"
+

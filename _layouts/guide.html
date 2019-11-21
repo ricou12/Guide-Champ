@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<article class="container-fluid">
+<article class="container-fluid guide">
     <div class="row">
-        <section class="col-12 mt-1">
-            <h1 class="accueil__title--Tangerine text-center bg-color--gray">Guide signalétique</h1>
+        <section class="col-12 mt-3">
+            <h1 class="accueil__title--Tangerine text-center guide__title">Guide signalétique</h1>
         </section>
         <section class="col-12 text-center d-flex flex-row flex-wrap justify-content-center align-items-center">
 
@@ -17,10 +17,10 @@ layout: default
             <!-- Construction du chemin d'acces à l'image principale -->
             {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
 
-            <a href="{{lien | relative_url}}">
-                <div class="card m-3 text-info shadow-sm bg-dark">
 
-                    <div class="card__eat">
+            <div class="guide__card m-3  ">
+                <a href="{{lien | relative_url}}">
+                    <div class="guide__card__eat">
                         {%- assign consommable = "" -%}
                         {% if fiche.comestibilite == "mortel" %}
                         {%- assign consommable = "mortel.png" -%}
@@ -35,22 +35,24 @@ layout: default
                         {% elsif fiche.comestibilite == "excellent" %}
                         {%- assign consommable = "excellent-comestible.png" -%}
                         {% endif %}
-                       
-                        <img class="card__eat__img"
-                            src="{{"./assets/images/others/" | append: consommable | relative_url}}" alt="Comestibilité">
+
+                        <img class="guide__card__eat__img"
+                            src="{{"./assets/images/others/" | append: consommable | relative_url}}"
+                            alt="Comestibilité">
+
                     </div>
+                </a>
 
-
-                    <div class="card__zoomer">
-                        <img src="{{pathImg | relative_url}}" class="card__image" alt="...">
-                    </div>
-
-
-                    <div class="card-body">
-                        <h5 class="card-title">{{fiche.nom_commun}}</h5>
-                    </div>
+                <div class="guide__card__zoomer">
+                    <img src="{{pathImg | relative_url}}" class="guide__card__image" alt="{{fiche.nom_commun}}">
                 </div>
-            </a>
+
+
+                <div class="guide__card__text d-flex flex-row justify-content-center align-items-center">
+                    <h5 class="guide__card__text--color">{{fiche.nom_commun}}</h5>
+                </div>
+            </div>
+
             {%- endfor -%}
             {% endif  %}
         </section>

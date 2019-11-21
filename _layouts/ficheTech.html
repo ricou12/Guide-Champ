@@ -9,32 +9,38 @@ layout: default
         </aside>
     </section>
 </article>
-<article class="container font-Amiri ">
+<article class="container font-Amiri">
     <div class="row">
         <section class="col-12 col-md-5">
             <div class="row">
                 <aside class="col-12">
-                    <div class="container-img">
+                    <!-- photo -->
+                    <div class="fichTech__img">
                         {%- assign pathImg = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" | append: musch.nom_img_liste  -%}
-                        <!-- vignette -->
-                        <img class="container-img__large" src="{{ pathImg  | relative_url }}" alt="">
+                        <img class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt="">
                     </div>
                 </aside>
             </div>
             <div class="row">
-                <aside class="col-12">
-                    <div class="fichTech__
-                    vignette">
-                        <!-- slider -->
-                        test
-                        <img src="" alt="">
+                <aside class="col-12 mt-3">
+                    <!-- vignettes -->
+                    <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
+                        {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
+                       {% if musch.number > "0" %}
+                           {% for i in (0..musch.number) %}
+                            {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
+                            <!-- <a href="{{variable|relative_url}}"> -->
+                            <img class="fichTech__vignette__img mr-1" src="{{variable|relative_url}}" alt="{{musch.nom_commun}}">
+                            <!-- </a> -->
+                        {%- endfor -%}
+                       {% endif %}
                     </div>
                 </aside>
             </div>
         </section>
         <section class="col-12 col-md-7">
             <h4 class="text-left">{{ musch.nom_latin | capitalize }}</h4>
-            <aside class="comment">
+            <aside class="fichTech__comment">
                 {%- if musch.groupe  -%}
                 <p>Groupe : {{ musch.groupe }}</p>
                 {%- endif  -%}

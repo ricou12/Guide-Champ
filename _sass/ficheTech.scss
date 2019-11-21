@@ -1,56 +1,41 @@
+.fichTech {
+    &__vignette {
+        height: 200px;
 
-
-// .fichTech__titre{
-// color: #444444;
-// background: #FFFFFF;
-// text-shadow: 1px 0px 1px #CCCCCC,
-// 0px 1px 1px #EEEEEE,
-// 2px 1px 1px #CCCCCC,
-// 1px 2px 1px #EEEEEE,
-// 3px 2px 1px #CCCCCC,
-// 2px 3px 1px #EEEEEE,
-// 4px 3px 1px #CCCCCC,
-// 3px 4px 1px #EEEEEE,
-// 5px 4px 1px #CCCCCC,
-// 4px 5px 1px #EEEEEE,
-// 6px 5px 1px #CCCCCC,
-// 5px 6px 1px #EEEEEE,
-// 7px 6px 1px #CCCCCC;
-// color: #444444;
-// background: #FFFFFF;
-// }
-// .bg{
-//     color: rgba(0, 0, 0, .6);
-//     background: #6e6e6e;
-//     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
-// }
-.container-img {
-    border: 1px solid rgba(147, 159, 223, 0.8);
-    overflow: hidden;
-    border-radius: 60px 0px 60px 0px;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-
-    &__large {
-        max-height: 100%;
-        max-width: 100%;
-        transition: 0.5s;
-
-        &:hover {
-            transform: scale(1.1);
+        &__img {
+            height: 100%;
         }
     }
-}
 
-.comment {
-    margin-top: 1em;
-    padding: 1.2em;
-    
-    &__text {
-        margin-top: 1.2em;
-        padding: 1.5em;
+    &__comment {
+        margin-top: 1em;
+        padding: 1.2em;
 
+        &__text {
+            margin-top: 1.2em;
+            padding: 1.5em;
+        }
+    }
+
+    &__img {
+        border: 1px solid rgba(147, 159, 223, 0.8);
+        overflow: hidden;
+        border-radius: 60px 0px 60px 0px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+
+
+        &__large {
+            max-height: 100%;
+            max-width: 100%;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
 

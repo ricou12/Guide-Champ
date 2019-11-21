@@ -31,13 +31,29 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0012fe",endCo
   /* IE6-9 */
 }
 
+@mixin color-grad-purple {
+background: -moz-linear-linear-gradient(to right, #390A0A 0%, #E6E8E5 50%, #973434 100%);
+background: -webkit-linear-gradient(to right, #390A0A 0%, #E6E8E5 50%, #973434 100%);
+background: linear-gradient(to right, #390A0A 0%, #E6E8E5 50%, #973434 100%);
+}
+
+@mixin color-grad-upToButton{
+  background: -moz-linear-gradient(to bottom, #f77b3f 0%, rgba(121, 131, 140, 0.55) 45%, rgba(130, 140, 149, 0.4) 50%, rgba(121, 131, 140, 0.55) 55%, #623e1e 100%);
+  background: -webkit-linear-gradient(to bottom, #f77b3f 0%, rgba(121, 131, 140, 0.55) 45%, rgba(130, 140, 149, 0.4) 50%, rgba(121, 131, 140, 0.55) 55%, #623e1e 100%);
+  background: linear-gradient(to bottom, #f77b3f 0%, rgba(121, 131, 140, 0.55) 45%, rgba(130, 140, 149, 0.4) 50%, rgba(121, 131, 140, 0.55) 55%, #623e1e 100%);
+}
 @mixin color-grad-green{
   background: rgb(39,136,26);
   background: -moz-linear-gradient(0deg, rgba(39,136,26,1) 0%, rgba(60,186,43,1) 10%, rgba(60,186,43,0.3) 50%, rgba(60,186,43,1) 90%, rgba(60,186,43,1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(39,136,26,1) 0%, rgba(60,186,43,1) 10%, rgba(60,186,43,0.3) 50%, rgba(60,186,43,1) 90%, rgba(60,186,43,1) 100%);
   background: linear-gradient(0deg, rgba(39,136,26,1) 0%, rgba(60,186,43,1) 10%, rgba(60,186,43,0.3) 50%, rgba(60,186,43,1) 90%, rgba(60,186,43,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27881a",endColorstr="#3cba2b",GradientType=1);
-
+}
+@mixin color-grad-greenDark{
+  background: #1B3A17;
+  background: -moz-linear-gradient(left, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
+  background: -webkit-linear-gradient(left, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
+  background: linear-gradient(to right, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
 }
 /* ******************************************************* 
                      SHADOW                       
@@ -46,3 +62,24 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0012fe",endCo
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -12px -27px 18px -22px rgba(0, 0, 0, 0);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -12px -27px 18px -22px rgba(0, 0, 0, 0);
 }
+@mixin shadow-down{
+-webkit-box-shadow: 0px 10px 13px -7px #000000,5px 5px 15px 5px rgba(0, 0, 0, 0);
+box-shadow: 0px 10px 13px -7px #000000,5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+@mixin border-shadow-b {
+  -webkit-box-shadow: 0px 12px 12px -1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 12px 12px -1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 12px 12px -1px rgba(0, 0, 0, 0.7);
+}
+
+@mixin border-shadow-t {
+  -webkit-box-shadow: 0px -12px 12px -1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px -12px 12px -1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px -12px 12px -1px rgba(0, 0, 0, 0.7);
+}
+/* ******************************************************* 
+                     COLOR                       
+******************************************************* */
+$Card-color: #1B3A17;
+
