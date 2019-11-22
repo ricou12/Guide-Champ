@@ -55,6 +55,10 @@ background: linear-gradient(to right, #390A0A 0%, #E6E8E5 50%, #973434 100%);
   background: -webkit-linear-gradient(left, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
   background: linear-gradient(to right, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
 }
+
+@mixin bg-grad-green {
+  background: linear-gradient(to right, #0A3916 0%, #B1BDAB 50%, #4e8454 100%);
+}
 /* ******************************************************* 
                      SHADOW                       
 ******************************************************* */
