@@ -2,7 +2,7 @@
     &__card {
         width: 20rem;
         position: relative;
-        @include them-bg-grad-green; // background card
+        @include them-bg-grad-brown; // background card
         @include shadow-down; // shadow card
         padding: 2em;
         z-index: 10;
