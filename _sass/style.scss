@@ -6,16 +6,23 @@
 // $text-color: rgb(242, 184, 44);
 
 $theme-brown: (
-    "bg-color": rgb(223, 186, 140),
+    "bg-color":rgb(223, 186, 140),
     "h1-color":rgb(83, 41, 15),
-    "h5-color": rgb(242, 184, 44),
+    "h5-color":rgb(242, 184, 44),
     "p-color": rgb(21, 36, 2),
 );
 
 $theme-green: (
     "bg-color": rgba(187, 215, 186, 0.6),
-    "h1-color":#5d774a,
-    "h5-color": #020202,
+    "h1-color":rgb(93, 119, 74),
+    "h5-color": rgb(2, 2, 2),
+    "p-color": rgb(21, 36, 2),
+);
+
+$theme-test: (
+    "bg-color": rgba(187, 215, 186, 0.6),
+    "h1-color":rgb(93, 119, 74),
+    "h5-color": rgb(2, 2, 2),
     "p-color": rgb(21, 36, 2),
 );
 
