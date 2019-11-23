@@ -1,6 +1,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+
+
   <!-- Title onglets du navigateur -->
   <title>{{ page.title }}</title>
 
@@ -16,25 +19,25 @@
   <link rel="icon" href="{{"/favicon.ico" |relative_url}}" />
 
   <!-- liens vers le CDN de Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arapey&display=swap" rel="stylesheet">
-
-  <!-- Lien vers mes fichiers css -->
-  <link rel="stylesheet" href="{{"./assets/css/main.css" | relative_url }}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Arapey&display=swap" rel="stylesheet" />
 
   <!-- liens vers le CDN de bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Lien vers mes fichiers css -->
+  <link rel="stylesheet" href="{{"./assets/css/main.css" | relative_url }}" type="text/css" />
+
 
   <!-- SEO opengraph -->
-  <meta property="og:title" content="Champignons de provence" />
-  <meta property="og:type" content="book" />
-  <property meta="og:image" content="{{"./favicon.ico" |relative_url}}" />
-  <property meta="og:url" content="{{"./index.html"|relative_url}}" />
+  <meta property="og:title" content="Champignons de provence"/>
+  <meta property="og:type" content="book"/>
+  <meta property="og:image" content="{{"./favicon.ico" |relative_url}}"/>
+  <meta propertya="og:url" content="{{"./index.html"|relative_url}}"/>
   <!-- SEO non obligatoire 150 et 200 caractères, décrire le contenu de la page -->
-  <property meta="og:description"
-    content="Guide pour la reconnaissance de champignons. Consulter plusieurs fiches descriptives d'espèces rencontrées dans le bassin méditérranéen ." />
+  <meta property="og:description" content="Guide pour la reconnaissance de champignons. Consulter plusieurs fiches descriptives d'espèces rencontrées dans le bassin méditérranéen ."/>
 
 </head>
