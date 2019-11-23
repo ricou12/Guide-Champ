@@ -26,7 +26,7 @@ layout: default
                     <!-- vignettes -->
                     <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
                         {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
-                       {% if musch.number > "0" %}
+                       {% if musch.nbrePhoto > "0" %}
                            {% for i in (0..musch.nbrePhoto) %}
                             {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
                             <!-- <a href="{{variable|relative_url}}"> -->
