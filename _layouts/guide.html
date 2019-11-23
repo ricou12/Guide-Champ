@@ -4,7 +4,7 @@ layout: default
 <article class="container-fluid guide">
     <div class="row">
         <section class="col-12 mt-3">
-            <h1 class="accueil__title--Tangerine text-center guide__title">Guide signalétique</h1>
+            <h1 class="text-center">Guide signalétique</h1>
         </section>
         <section class="col-12 text-center d-flex flex-row flex-wrap justify-content-center align-items-center">
 
@@ -18,7 +18,7 @@ layout: default
             {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
 
 
-            <div class="guide__card m-3  ">
+            <div class="guide__card m-3">
                 <a href="{{lien | relative_url}}">
                     <div class="guide__card__eat">
                         {%- assign consommable = "" -%}
@@ -48,7 +48,7 @@ layout: default
                 </div>
 
 
-                <div class="guide__card__text d-flex flex-row justify-content-center align-items-center">
+                <div class="guide__card__text d-flex flex-row justify-content-center align-items-center mt-2">
                     <h5 class="guide__card__text--color">{{fiche.nom_commun}}</h5>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 .footer {
-    @include border-shadow-t;
+    color:white;
+    @include them-bg-grad-brown;  // gradient brown
     &__bouc {
         width: 100%;
     }

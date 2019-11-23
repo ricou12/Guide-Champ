@@ -1,17 +1,9 @@
 .guide {
-    background-color: rgba(162, 87, 5, 0.6);
-    &__title{
-        @include color-grad-upToButton;
-        @include shadow-leftToRight;
-        color:rgb(43, 37, 244);
-        padding: 10px;
-    }
-
     &__card {
         width: 20rem;
         position: relative;
-        @include color-grad-purple;
-        @include shadow-down;
+        @include them-bg-grad-brown; // background card
+        @include shadow-down; // shadow card
         padding: 2em;
         z-index: 10;
         border-radius: 7px;
@@ -21,13 +13,7 @@
         }
 
         &__text {
-            // background-color: $Card-color;
-            //  @include color-grad-greenDark;
             height: 80px;
-
-            &--color {
-                color: white;
-            }
         }
 
         &__zoomer {
@@ -53,6 +39,8 @@
 
             &:hover {
                 background-color: rgba(0, 0, 0, 0.4);
+                border-radius: 7px;
+
 
                 &>.guide__card__eat__img {
                     position: absolute;
@@ -69,7 +57,7 @@
 
         // largeur d'image au dimension du container parent
         &__image {
-            border-radius:5px;
+            border-radius: 5px;
             width: 100%;
         }
 

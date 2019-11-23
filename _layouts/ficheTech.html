@@ -5,7 +5,7 @@ layout: default
     {% assign musch = site.data.mushroom[page.number] -%}
     <section class="row">
         <aside class="col-12 mt-1">
-            <h1 class="accueil__title--Tangerine text-center bg-color--gray">{{ musch.nom_commun}}</h1>
+            <h1 class="text-center">{{ musch.nom_commun}}</h1>
         </aside>
     </section>
 </article>
@@ -26,8 +26,8 @@ layout: default
                     <!-- vignettes -->
                     <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
                         {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
-                       {% if musch.number > "0" %}
-                           {% for i in (0..musch.number) %}
+                       {% if musch.nbrePhoto > "0" %}
+                           {% for i in (0..musch.nbrePhoto) %}
                             {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
                             <!-- <a href="{{variable|relative_url}}"> -->
                             <img class="fichTech__vignette__img mr-1" src="{{variable|relative_url}}" alt="{{musch.nom_commun}}">

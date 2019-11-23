@@ -6,13 +6,16 @@
  
  
 //importations scss, et intégré à notre css final.
-@import "./components/main-components";
-@import "utilities";
+
+// Links
+$bgImg: "{{ './assets/images/others/ArPl.jpg' | relative_url }}";
+
+// @import "./components/main-components";
+@import "style";
 @import "navbar";
-@import "font";
 @import "logo";
-@import "ficheTech";
+@import "accueil";
 @import "guide";
-@import "home";
+@import "ficheTech";
 @import "footer";
 

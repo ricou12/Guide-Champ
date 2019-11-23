@@ -1,6 +1,7 @@
 /* ******************************************************* 
                      GRADIENT                        
 ******************************************************* */
+
 @mixin color-grad-blue {
   background: rgb(0,18,254);
 background: -moz-linear-gradient(0deg, rgba(0,18,254,1) 0%, rgba(0,73,254,1) 10%, rgba(0,73,254,0.3) 50%, rgba(0,73,254,1) 90%, rgba(0,18,254,1) 100%);
@@ -55,6 +56,10 @@ background: linear-gradient(to right, #390A0A 0%, #E6E8E5 50%, #973434 100%);
   background: -webkit-linear-gradient(left, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
   background: linear-gradient(to right, #1B3A17 0%, #59BF4C 50%, #1B3A17 100%);
 }
+
+@mixin bg-grad-green {
+  background: linear-gradient(to right, #0A3916 0%, #B1BDAB 50%, #4e8454 100%);
+}
 /* ******************************************************* 
                      SHADOW                       
 ******************************************************* */
@@ -78,8 +83,4 @@ box-shadow: 0px 10px 13px -7px #000000,5px 5px 15px 5px rgba(0, 0, 0, 0);
   -moz-box-shadow: 0px -12px 12px -1px rgba(0, 0, 0, 0.7);
   box-shadow: 0px -12px 12px -1px rgba(0, 0, 0, 0.7);
 }
-/* ******************************************************* 
-                     COLOR                       
-******************************************************* */
-$Card-color: #1B3A17;
 
