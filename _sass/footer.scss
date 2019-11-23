@@ -1,6 +1,6 @@
 .footer {
     color:white;
-    @include color-grad-brown;  // gradient brown
+    @include them-bg-grad-brown;  // gradient brown
     &__bouc {
         width: 100%;
     }

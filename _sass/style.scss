@@ -1,35 +1,85 @@
 /* ******************************************************* 
                     THEME COLOR                       
 ******************************************************* */
-$Card-color: #1B3A17;
-$bg-brown1: #e6ccac;
-$bg-brown: rgb(223, 186, 140);
-$color-brown:#53290f;
-$text-color: rgb(242, 184, 44);
+// $bg-brown: rgb(223, 186, 140);
+// $color-brown:rgb(83, 41, 15);
+// $text-color: rgb(242, 184, 44);
 
+$theme-brown: (
+    "bg-color": rgb(223, 186, 140),
+    "h1-color":rgb(83, 41, 15),
+    "h5-color": rgb(242, 184, 44),
+    "p-color": rgb(21, 36, 2),
+);
+
+$theme-green: (
+    "bg-color": rgba(187, 215, 186, 0.6),
+    "h1-color":#5d774a,
+    "h5-color": #020202,
+    "p-color": rgb(21, 36, 2),
+);
+
+// Renvoi la couleur associée au theme
+@function bg-color($theme) {
+    @return map-get($theme, "bg-color");
+}
+@function h1-color($theme) {
+    @return map-get($theme, "h1-color");
+}
+@function h5-color($theme) {
+    @return map-get($theme,"h5-color");
+}
+@function p-color($theme) {
+    @return map-get($theme,"p-color");
+}
+/* ******************************************************* 
+                    MIXIN                       
+******************************************************* */
+@mixin them-bg-grad-green {
+    background: -moz-linear-linear-gradient(to right, #345E30 0%, #345E308A 50%, #345E30);
+    background: -webkit-linear-gradient(to right, #345E30 0%, #345E308A 50%, #345E30);
+    background: linear-gradient(to right, #345E30 0%, #345E308A 50%, #345E30);
+}
+
+@mixin them-bg-grad-brown {
+    background: -moz-linear- linear-gradient(to right, #241F1A 0%, #91634e 50%, #33230f 100%);
+    background: -webkit-linear- linear-gradient(to right, #241F1A 0%, #91634e 50%, #33230f 100%);
+    background: linear-gradient(to right, #241F1A 0%, #91634e 50%, #33230f 100%);
+}
+
+@mixin shadow-down {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
 
 /* ******************************************************* 
                       THEME COMMUN                    
 ******************************************************* */
 body {
-    background-color: $bg-brown;
+    background-color: bg-color($theme-brown);
 }
 
 h1 {
-    color: $color-brown;
+    color: h1-color($theme-brown);
     font-family: 'Tangerine', cursive;
     font-size: 4vw;
 }
 
-h5{
+p{
+    color: p-color($theme-brown);
+}
+h5 {
+    color: h5-color($theme-brown);
     font-size: 1.5em;
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
-        
+
     }
 }
+
 
 /* ******************************************************* 
                     THEME FONT                        
@@ -51,4 +101,3 @@ h5{
     font-family: 'Arapey', sans-serif;
     font-size: 1.2em;
 }
-

@@ -1,24 +1,6 @@
 /* ******************************************************* 
                      GRADIENT                        
 ******************************************************* */
-@mixin color-grad-test1{
-  background: linear-gradient(to right, #390A0A 0%, #C67A37 50%, #53290f 100%);
-}
-
-@mixin color-grad-test2{
-  background: linear-gradient(to right, #133c0a 0%, #36a41ea6 50%, #133c0a 100%);
-}
-
-@mixin color-grad-test21{
-  background: linear-gradient(to bottom, #133c0a 0%, #36a41ea6 50%, #133c0a 100%);
-}
-
-@mixin color-grad-brown{
-  background: linear-gradient(to right, #241F1A 0%, #91634e 50%, #33230f 100%);
-}
-@mixin color-grad-test4{
-  background: linear-gradient(to right, #227105 0%, #53aa33 50%, #227105 100%);
-}
 
 @mixin color-grad-blue {
   background: rgb(0,18,254);

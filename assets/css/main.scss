@@ -10,11 +10,12 @@
 // Links
 $bgImg: "{{ './assets/images/others/ArPl.jpg' | relative_url }}";
 
-@import "./components/main-components";
+// @import "./components/main-components";
 @import "style";
 @import "navbar";
 @import "logo";
-@import "ficheTech";
-@import "guide";
-@import "footer";
 @import "accueil";
+@import "guide";
+@import "ficheTech";
+@import "footer";
+
