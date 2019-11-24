@@ -1,15 +1,22 @@
 .fichTech {
+    &__preview{ 
+        height:50px;
+    }
+    &__follow{
+        height:50px;
+    }
     &__vignette {
         height: 200px;
 
         &__img {
+            cursor: pointer;
             height: 100%;
         }
     }
 
     &__comment {
         margin-top: 1em;
-        padding: 1.2em;
+        padding: 0px 1.2em 1.2em 1.2em;
 
         &__text {
             margin-top: 1.2em;

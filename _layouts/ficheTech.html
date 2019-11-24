@@ -4,66 +4,72 @@ layout: default
 <article class="container-fluid">
     {% assign musch = site.data.mushroom[page.number] -%}
     <section class="row">
-        <aside class="col-12 mt-1">
+        <!-- <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <a href="{{ lien | relative_url }}"><img class="fichTech__preview" src="{{ "./assets/images/others/precedent.png"|relative_url }}" alt="preview"></a>
+        </aside> -->
+        <aside class="col-12 mt-1 p-2 text-center">
             <h1 class="text-center">{{ musch.nom_commun}}</h1>
         </aside>
+        <!-- <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <a href=""><img class="fichTech__follow" src="{{ "./assets/images/others/suivant.png"|relative_url }}"  alt="next"></a>   
+        </aside> -->
     </section>
 </article>
 <article class="container font-Amiri">
     <div class="row">
-        <section class="col-12 col-md-5">
+        <section class="col-12 col-lg-6 mb-3">
             <div class="row">
                 <aside class="col-12">
                     <!-- photo -->
                     <div class="fichTech__img">
                         {%- assign pathImg = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" | append: musch.nom_img_liste  -%}
-                        <img class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt="">
-                    </div>
-                </aside>
-            </div>
-            <div class="row">
-                <aside class="col-12 mt-3">
-                    <!-- vignettes -->
-                    <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
-                        {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
-                       {% if musch.nbrePhoto > "0" %}
-                           {% for i in (0..musch.nbrePhoto) %}
-                            {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
-                            <!-- <a href="{{variable|relative_url}}"> -->
-                            <img class="fichTech__vignette__img mr-1" src="{{variable|relative_url}}" alt="{{musch.nom_commun}}">
-                            <!-- </a> -->
-                        {%- endfor -%}
-                       {% endif %}
+                        <img id="fullImg" class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt="">
                     </div>
                 </aside>
             </div>
         </section>
-        <section class="col-12 col-md-7">
-            <h4 class="text-left">{{ musch.nom_latin | capitalize }}</h4>
-            <aside class="fichTech__comment">
-                {%- if musch.groupe  -%}
-                <p>Groupe : {{ musch.groupe }}</p>
-                {%- endif  -%}
-                {%- if musch.chapeau -%}
-                <p>Chapeau : {{ musch.chapeau }}</p>
-                {%- endif  -%}
-                {%- if musch.tubes_lames  -%}
-                <p>Tubes ou lames : {{ musch.tubes_lames }}</p>
-                {%- endif  -%}
-                {%- if musch.pied -%}
-                <p>Pied : {{ musch.pied }}</p>
-                {%- endif  -%}
-                {%- if musch.chair -%}
-                <p>Chair : {{ musch.chair }}</p>
-                {%- endif  -%}
-                {%- if musch.remarques -%}
-                <p>Remarques : {{ musch.remarques }}</p>
-                {%- endif  -%}
-                {%- if musch.comestibilite -%}
-                <p>Comestibilité : {{ musch.comestibilite }}</p>
-                {%- endif  -%}
-            </aside>
-
+        <section class="col-12 col-lg-6">
+            <div class="row">
+                <aside class="col-12">
+                    <!-- vignettes -->
+                    <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
+                        {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
+                        {% if musch.nbrePhoto > "0" %}
+                        {% for i in (0..musch.nbrePhoto) %}
+                        {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
+                        <img class="fichTech__vignette__img mr-1" src="{{variable|relative_url}}"
+                            alt="{{musch.nom_commun}}" onclick="showFullImg();">
+                        {%- endfor -%}
+                        {% endif %}
+                    </div>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-12 fichTech__comment">
+                    <h4>{{ musch.nom_latin }}</h4>
+                    {%- if musch.groupe  -%}
+                    <p>Groupe : {{ musch.groupe }}</p>
+                    {%- endif  -%}
+                    {%- if musch.chapeau -%}
+                    <p>Chapeau : {{ musch.chapeau }}</p>
+                    {%- endif  -%}
+                    {%- if musch.tubes_lames  -%}
+                    <p>Tubes ou lames : {{ musch.tubes_lames }}</p>
+                    {%- endif  -%}
+                    {%- if musch.pied -%}
+                    <p>Pied : {{ musch.pied }}</p>
+                    {%- endif  -%}
+                    {%- if musch.chair -%}
+                    <p>Chair : {{ musch.chair }}</p>
+                    {%- endif  -%}
+                    {%- if musch.remarques -%}
+                    <p>Remarques : {{ musch.remarques }}</p>
+                    {%- endif  -%}
+                    {%- if musch.comestibilite -%}
+                    <p>Comestibilité : {{ musch.comestibilite }}</p>
+                    {%- endif  -%}
+                </aside>
+            </div>
         </section>
     </div>
 </article>
