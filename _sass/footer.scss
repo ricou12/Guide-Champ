@@ -1,5 +1,4 @@
 .footer {
-    color:white;
     @include them-bg-grad-brown;  // gradient brown
     &__bouc {
         width: 100%;
@@ -10,5 +9,8 @@
 
     &__list {
         list-style-type: none;
+    }
+    p,li{
+        color:white;
     }
 }
