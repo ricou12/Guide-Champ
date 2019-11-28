@@ -12,11 +12,10 @@ layout: default
             {% assign orderItem = site.data.mushroom | sort: 'nom_commun'  %}
             {%- for fiche in orderItem -%}
             <!-- Lien vers les fichier Md  -->
-            {%- assign lien = "/assets/html/file/" | append: fiche.dossier_photo |append:".html"  -%}
+            {%- assign lien = "./assets/html/file/" | append: fiche.dossier_photo |append:".html"  -%}
 
             <!-- Construction du chemin d'acces à l'image principale -->
-            {%- assign pathImg = "/assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
-
+            {%- assign pathImg = "./assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
 
             <div class="guide__card m-3">
                 <a href="{{lien | relative_url}}">

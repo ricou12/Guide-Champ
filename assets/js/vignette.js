@@ -5,6 +5,7 @@
 /** ***************************************************************************************
  *                            ID DE  BALISE HTML
  **************************************************************************************** */
+
 // Stocke dans des constantes, les ID de balise,
 // on pourra modifier, créer, supprimer des balises au niveau du fichier HTML via le DOM.
 const $fullImg = document.getElementById("fullImg");

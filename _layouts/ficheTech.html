@@ -5,15 +5,15 @@ layout: default
 <article class="container">
         {% assign musch = site.data.mushroom[page.number] -%}
         <section class="row">
-            <!-- <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
                 <a href="{{ lien | relative_url }}"><img class="fichTech__preview" src="{{ "./assets/images/others/precedent.png"|relative_url }}" alt="preview"></a>
-            </aside> -->
-            <aside class="col-12 mt-1 p-2 text-center">
+            </aside>
+            <aside class="col-8 mt-1 p-2 text-center">
                 <h1>{{ musch.nom_commun}}</h1>
             </aside>
-            <!-- <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
                 <a href=""><img class="fichTech__follow" src="{{ "./assets/images/others/suivant.png"|relative_url }}"  alt="next"></a>   
-            </aside> -->
+            </aside>
         </section>
     <div class="row">
         <section class="col-12 col-lg-6 mb-3">
@@ -31,13 +31,13 @@ layout: default
             <div class="row">
                 <aside class="col-12">
                     <!-- vignettes -->
-                    <div class="fichTech__vignette d-flex flex-row  nowrap overflow-auto">
+                    <div class="fichTech__vignette d-flex flex-row nowrap overflow-auto">
                         {% assign dossier = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" %}
                         {% if musch.nbrePhoto > "0" %}
                         {% for i in (0..musch.nbrePhoto) %}
                         {% assign variable =  dossier | append: "img" | append: i | append: ".jpg" %}
                         <img class="fichTech__vignette__img mr-1" src="{{variable|relative_url}}"
-                            alt="{{musch.nom_commun}}" onclick="showFullImg();">
+                            alt="{{musch.nom_commun}}" onmouseover="showFullImg();">
                         {%- endfor -%}
                         {% endif %}
                     </div>
@@ -75,4 +75,6 @@ layout: default
         </section>
     </div>
 </article>
-<!-- {% assign musch = site.data.mushroom | where: "ID",page.number -%} -->
+
+
+script
