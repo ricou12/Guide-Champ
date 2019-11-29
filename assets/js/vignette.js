@@ -18,3 +18,4 @@ function showFullImg(){
     var path = $vignette.getAttribute("src");
     $fullImg.setAttribute("src",path);
 }
+

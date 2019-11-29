@@ -11,8 +11,9 @@ layout: default
             {%- if site.data.mushroom.size > 0 -%}
             {% assign orderItem = site.data.mushroom | sort: 'nom_commun'  %}
             {%- for fiche in orderItem -%}
+            
             <!-- Lien vers les fichier Md  -->
-            {%- assign lien = "./assets/html/file/" | append: fiche.dossier_photo |append:".html"  -%}
+            {%- assign lien = "./assets/html/fichTech/" | append: fiche.dossier_photo |append:".html"  -%}
 
             <!-- Construction du chemin d'acces à l'image principale -->
             {%- assign pathImg = "./assets/images/photo-small/" | append: fiche.dossier_photo |append:"/" | append: fiche.nom_img_liste  -%}
@@ -38,7 +39,6 @@ layout: default
                         <img class="guide__card__eat__img"
                             src="{{"./assets/images/others/" | append: consommable | relative_url}}"
                             alt="Comestibilité">
-
                     </div>
                 </a>
 
@@ -57,4 +57,3 @@ layout: default
         </section>
     </div>
 </article>
-<!-- card-img-top -->

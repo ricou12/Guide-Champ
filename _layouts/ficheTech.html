@@ -3,18 +3,21 @@ layout: default
 ---
 
 <article class="container">
-        {% assign musch = site.data.mushroom[page.number] -%}
-        <section class="row">
-            <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
-                <a href="{{ lien | relative_url }}"><img class="fichTech__preview" src="{{ "./assets/images/others/precedent.png"|relative_url }}" alt="preview"></a>
-            </aside>
-            <aside class="col-8 mt-1 p-2 text-center">
-                <h1>{{ musch.nom_commun}}</h1>
-            </aside>
-            <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
-                <a href=""><img class="fichTech__follow" src="{{ "./assets/images/others/suivant.png"|relative_url }}"  alt="next"></a>   
-            </aside>
-        </section>
+    {% assign musch = site.data.mushroom[page.number] -%}
+
+    <section class="row">
+        <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <a href="" id="preview" ><img class="fichTech__preview"
+                    src="{{ "./assets/images/others/precedent.png"|relative_url }}" alt="preview"></a>
+        </aside>
+        <aside class="col-8 mt-1 p-2 text-center">
+            <h1>{{ musch.nom_commun}}</h1>
+        </aside>
+        <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
+            <a href="" id="next"><img class="fichTech__follow"
+                    src="{{ "./assets/images/others/suivant.png"|relative_url }}" alt="next"></a>
+        </aside>
+    </section>
     <div class="row">
         <section class="col-12 col-lg-6 mb-3">
             <div class="row">
@@ -22,7 +25,8 @@ layout: default
                     <!-- photo -->
                     <div class="fichTech__img">
                         {%- assign pathImg = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" | append: musch.nom_img_liste  -%}
-                        <img id="fullImg" class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt="">
+                        <img id="fullImg" class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt=""
+                            >
                     </div>
                 </aside>
             </div>
@@ -76,5 +80,48 @@ layout: default
     </div>
 </article>
 
+<script type="application/javascript">
+    const mynumber = "{{ page.number }}";
 
-script
+    const $preview = document.getElementById("preview");
+    const $next = document.getElementById("next");
+
+    // Creer un tableau avec les noms de fichier html a inserer dans les balises next et preview
+    const fichtec = [
+         {%- if site.data.mushroom.size > 0 -%}
+            {% assign orderItem = site.data.mushroom | sort: 'nom_commun'  %}
+            {%- for file in orderItem -%}
+                "{{file.dossier_photo}}",
+            {%- endfor -%}
+        {% endif  %}
+    ]
+
+    const Fichtechnique = fichtec.indexOf("{{musch.dossier_photo}}");
+    console.log(Fichtechnique);
+    console.log(fichtec.length);
+
+    if ( Fichtechnique > 0 ){
+        $preview.style.display = "block";
+        const previewFiche =  fichtec [ eval ( Fichtechnique - 1 ) ] + ".html";
+        $preview.setAttribute( "href", previewFiche );
+    }
+
+    if ( Fichtechnique == 0) {
+            $preview.style.display = "none";
+    }
+
+    if (Fichtechnique < fichtec.length) {
+            $next.style.display = "block";
+            const nextFiche = fichtec[eval(Fichtechnique + 1)] + ".html";
+            $next.setAttribute("href", nextFiche);
+    }
+
+    if ( Fichtechnique == fichtec.length-1 ) {
+        $next.style.display = "none";
+    }
+    
+
+    
+
+    
+</script>
