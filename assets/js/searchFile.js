@@ -1,10 +1,12 @@
 ---
 
 ---
-//const mynumber = "{{ page.number }}";
+
 
 const mynumber =  parseInt(document.querySelector("article").getAttribute("articleId"));
+const filename =  document.querySelector("article template").getAttribute("nameFile");
 
+  
     const $preview = document.getElementById("preview");
     const $next = document.getElementById("next");
 
@@ -18,10 +20,9 @@ const mynumber =  parseInt(document.querySelector("article").getAttribute("artic
         {% endif  %}
     ]
 
-    const Fichtechnique = fichtec.indexOf("{{musch.dossier_photo}}");
-    console.log(fichtec);
-    // console.log(fichtec.length);
-
+    const Fichtechnique = fichtec.indexOf(filename);
+    // console.log(fichtec);
+    
     if ( Fichtechnique > 0 ){
         $preview.style.display = "block";
         const previewFiche =  fichtec [ eval ( Fichtechnique - 1 ) ] + ".html";
