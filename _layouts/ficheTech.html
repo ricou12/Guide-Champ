@@ -2,9 +2,8 @@
 layout: default
 ---
 
-<article class="container">
+<article class="container" articleId={{page.number}}>
     {% assign musch = site.data.mushroom[page.number] -%}
-
     <section class="row">
         <aside class="col-2 mt-1 d-flex justify-content-center align-items-center">
             <a href="" id="preview" ><img class="fichTech__preview"
@@ -80,7 +79,7 @@ layout: default
     </div>
 </article>
 
-<script type="application/javascript">
+<!-- <script type="application/javascript">
     const mynumber = "{{ page.number }}";
 
     const $preview = document.getElementById("preview");
@@ -97,17 +96,17 @@ layout: default
     ]
 
     const Fichtechnique = fichtec.indexOf("{{musch.dossier_photo}}");
-    console.log(Fichtechnique);
-    console.log(fichtec.length);
+    console.log(fichtec);
+    // console.log(fichtec.length);
 
     if ( Fichtechnique > 0 ){
         $preview.style.display = "block";
         const previewFiche =  fichtec [ eval ( Fichtechnique - 1 ) ] + ".html";
-        $preview.setAttribute( "href", previewFiche );
+        $preview.setAttribute( "href",previewFiche );
     }
 
     if ( Fichtechnique == 0) {
-            $preview.style.display = "none";
+        $preview.style.display = "none";
     }
 
     if (Fichtechnique < fichtec.length) {
@@ -119,9 +118,5 @@ layout: default
     if ( Fichtechnique == fichtec.length-1 ) {
         $next.style.display = "none";
     }
-    
-
-    
-
-    
-</script>
+   
+</script> -->
