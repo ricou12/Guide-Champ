@@ -26,8 +26,9 @@ layout: default
                     <!-- photo -->
                     <div class="fichTech__img">
                         {%- assign pathImg = "./assets/images/photo-small/" | append: musch.dossier_photo | append: "/" | append: musch.nom_img_liste  -%}
-                        <img id="fullImg" class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt=""
-                            >
+                        <a href="{{ "./assets/html/slideShow.html" | relative_url }}"><img id="fullImg"
+                                class="fichTech__img__large" src="{{ pathImg  | relative_url }}" alt="photo_full_size"
+                            ></a>
                     </div>
                 </aside>
             </div>

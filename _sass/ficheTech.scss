@@ -1,10 +1,12 @@
 .fichTech {
-    &__preview{ 
-        height:50px;
+    &__preview {
+        height: 50px;
     }
-    &__follow{
-        height:50px;
+
+    &__follow {
+        height: 50px;
     }
+
     &__vignette {
         height: 200px;
 
@@ -17,23 +19,16 @@
     &__comment {
         margin-top: 1em;
         padding: 0px 1.2em 1.2em 1.2em;
-
-        // &__text {
-        //     margin-top: 1.2em;
-        //     padding: 1.5em;
-        // }
     }
 
     &__img {
         border: 1px solid rgba(147, 159, 223, 0.8);
         overflow: hidden;
         border-radius: 60px 0px 60px 0px;
-        -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 
-
-
+        // -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        // -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        // box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         &__large {
             max-height: 100%;
             max-width: 100%;
@@ -45,4 +40,3 @@
         }
     }
 }
-
