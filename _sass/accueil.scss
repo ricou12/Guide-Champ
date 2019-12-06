@@ -2,6 +2,7 @@
     background-image: url($bgImg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 
@@ -10,10 +11,6 @@
         top: 10px;
         left: 0px;
         width: 100%;
-    }
-
-    &__img {
-        width: 100vw;
     }
 
 }

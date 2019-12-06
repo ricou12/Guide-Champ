@@ -25,7 +25,7 @@ const filename =  document.querySelector("article template").getAttribute("nameF
     
     if ( Fichtechnique > 0 ){
         $preview.style.display = "block";
-        const previewFiche =  fichtec [ eval ( Fichtechnique - 1 ) ] + ".html";
+        const previewFiche =  fichtec [  Fichtechnique - 1 ] + ".html";
         $preview.setAttribute( "href",previewFiche );
     }
 
@@ -35,7 +35,7 @@ const filename =  document.querySelector("article template").getAttribute("nameF
 
     if (Fichtechnique < fichtec.length) {
             $next.style.display = "block";
-            const nextFiche = fichtec[eval(Fichtechnique + 1)] + ".html";
+            const nextFiche = fichtec[ Fichtechnique + 1] + ".html";
             $next.setAttribute("href", nextFiche);
     }
 
