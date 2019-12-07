@@ -1,0 +1,20 @@
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\WindowsApplication1.Form1.resources
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\WindowsApplication1.Form2.resources
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\WindowsApplication1.Resources.resources
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\parser json.vbproj.GenerateResource.Cache
+F:\PROGRAMMATION VB C#\parser json\parser json\bin\Debug\parserJson.exe
+F:\PROGRAMMATION VB C#\parser json\parser json\bin\Debug\parserJson.pdb
+F:\PROGRAMMATION VB C#\parser json\parser json\bin\Debug\parserJson.xml
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\parserJson.exe
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\parserJson.xml
+F:\PROGRAMMATION VB C#\parser json\parser json\obj\x86\Debug\parserJson.pdb
+C:\Users\83010-07-07\Desktop\parser json\parser json\bin\Debug\parserJson.exe
+C:\Users\83010-07-07\Desktop\parser json\parser json\bin\Debug\parserJson.pdb
+C:\Users\83010-07-07\Desktop\parser json\parser json\bin\Debug\parserJson.xml
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\parser json.vbproj.GenerateResource.cache
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\parserJson.exe
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\parserJson.xml
+C:\Users\83010-07-07\Desktop\parser json\parser json\obj\x86\Debug\parserJson.pdb
