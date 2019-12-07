@@ -6,4 +6,6 @@ assets/html/fichTech : Un fichier md pour chaque fiche signalétique(définition
 
 Autogénération des fichiers md via application vb net développé et fourni avec son code source dans le projet.
 
+Intéret: si la base de données est modifiée (ajout ou suppression d'enregistrement) il faut régénérer les fichiers markdown car les données sont liées au indices de la DataBase.
+
 
