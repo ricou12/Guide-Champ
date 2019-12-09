@@ -1,6 +1,6 @@
 # [Petit guide des champignons](https://ricou12.github.io/Guide-Champ/)
 
-Jekyll sass javascript
+# Jekyll sass javascript
 
 ## Génération des fiches signalétiques.
 assets/html/fichTech : Un fichier md pour chaque fiche signalétique(définition du layout, et id pour l'accès à la base de donnée au format *.json.
