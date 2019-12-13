@@ -7,6 +7,6 @@ Chacune des fiches signalétiques sont générées dans le repertoire assets/htm
 
 Ces fichiers sont autogénérées via une application vb net développé et fourni avec son code source dans le projet.
 
-Intéret: si la base de données est modifiée (ajout ou suppression d'enregistrement) il faudra régénérer les fichiers markdown actualiser l'acces au données.
+Intéret: si la base de données est modifiée (ajout ou suppression d'enregistrement) il faudra ajouter ou supprimer des fichiers markdown et modifié l'id pour l'acces au données.
 
 
